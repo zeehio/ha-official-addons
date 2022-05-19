@@ -5,7 +5,4 @@ FROM $BUILD_FROM
 RUN apk add --no-cache nginx openssl inotify-tools
 
 # Copy data
-COPY data/run.sh /
-COPY data/nginx.conf /etc/
-
-CMD [ "/run.sh" ]
+COPY data /
